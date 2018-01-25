@@ -1,0 +1,226 @@
+@charset "utf-8";
+@import "common"; 
+@import "header2";
+@import "footer";  
+body{
+    font: 12px "微软雅黑",Helvetica,sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #555;
+    background: #FDFDFD!important;
+}
+div{
+    display:block;
+}
+.hico01, .hico02, .hico04 {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/headico.png) no-repeat;
+    position: absolute;
+}
+.clear{
+    clear: both;
+}
+.fcon_01,.fcon_02,.fcon_03,.fcon_04{
+    width: 26px;
+    height: 26px;
+    padding-right: 4px;
+    background: url(../img/form.gif) no-repeat;
+    margin: 0 4px 0 6px;
+    border-right: solid 1px #e8e8e8;
+    float: left;
+    display: inline;
+}
+input{
+    font-size: 12px;
+    border: solid 1px #ddd;
+    color: #6c6c6c;
+    background: none;
+    background-color: #fff;
+    width: 120px;
+    height: 24px;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
+
+//section
+section{
+    width:100%;
+    position: relative;
+    height: 535px;
+    background: #fefefe url(../img/memberbg.jpg) center 0 no-repeat;
+    .section_in{
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        margin-left: 150px;
+        width: 298px;
+        background: #fff;
+        padding: 30px 40px;
+        border: solid 1px #e8e8e8;
+        box-shadow: 3px 3px 7px #eee;
+        
+        form{
+            display:block;
+            font-size:12px;
+            h3{
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 20px;
+                color: #333;
+            }
+            .user{
+                border: solid 1px #e8e8e8;
+                background: #fff;
+                margin-bottom: 10px;
+                padding: 4px 0;
+                color: #999;
+                overflow:hidden;
+                .fcon_01{
+                    float:left;
+                    background: url(../img/form.gif) no-repeat 0 0;
+                    
+                }
+                .name{
+                    float:left;
+                    width: 240px;
+                    margin: 0 0 0 4px;
+                    position: relative;
+                    input{
+                        width: 100%;
+                        padding: 0;
+                        border: none;
+                        font-size: 12px;
+                        height: 26px;
+                        line-height: 26px;
+                        color: #333;
+                    }
+                }   
+            }
+           
+            
+        .pass{
+            @extend .user;
+            .fcon_03{
+                background: url(../img/form.gif) no-repeat -27px 0;
+            }
+        }
+        .mes{
+            height: 30px;
+            color: red;
+        }
+        
+        .choose{
+                padding: 7px 0 5px 0;
+                color: #999;
+                height:20px;
+                .choose_l{
+                    float: left;
+                    cursor: pointer;
+                    display: block;
+                    overflow:hidden;
+                    input{
+                        float: left;
+                        display: block;
+                        vertical-align: middle;
+                        margin-right: 7px;
+                        border: none;
+                        width: auto;
+                        height: auto;
+                        outline: none;
+                    }
+                    span{
+                        float: left;
+                        display: block;
+                        vertical-align: middle;
+                        margin-right: 7px;
+                    }
+                }
+                .choose_r{
+                    float: right;
+                    display: block;
+                    color: #999;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+        .login{
+            display: block;
+            .log_in{
+                    width: 100%;
+                    height: 48px;
+                    background: #333;
+                    color: #fff;
+                    border: none;
+                    border-radius: 3px;
+                    font-size: 18px;
+                    font-family: "微软雅黑";
+                    cursor: pointer;
+            }
+        }
+        .register{
+            text-align: right;
+            margin: 20px 0 7px 0;
+            a{
+                color: #669aca;
+                cursor: pointer;
+            }
+        }
+        
+        .other{
+            .title{
+                height: 20px;
+                position: relative;
+                .line{
+                    border-bottom: solid 1px #e8e8e8;
+                    position: absolute;
+                    left: 0;
+                    top: 8px;
+                    width: 100%;
+                    z-index: 1;
+                }
+                .word{
+                    background: #fff;
+                    color: #999;
+                    margin: 0 auto;
+                    text-align: center;
+                    width: 110px;
+                    z-index: 2;
+                    position: relative;
+                }
+            }
+            .other_b{
+                padding: 20px 25px 5px 25px;
+                ul{
+                    li{
+                        float: left;
+                        width: 50%;
+                        display: list-item;
+                        text-align: -webkit-match-parent;
+                        a{
+                            display: block;
+                            width: 35px;
+                            height: 35px;
+                            background: url(../img/jointLogin.gif) no-repeat;
+                            margin: 0 auto;
+                            opacity: .5;
+                            transition-duration: .1s;
+                            transition-timing-function: linear;
+                            color: #666;
+                        }
+                        .wechat{
+                            background-position: -35px 0;
+                        }
+                        .xl{
+                            background-position: -70px 0;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

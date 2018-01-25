@@ -1,0 +1,205 @@
+@charset "utf-8"; 
+@import "common";
+@import "header2";
+@import "footer"; 
+body{
+    font: 12px "微软雅黑",Helvetica,sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #555;
+    background: #FDFDFD!important;
+}
+div{
+    display:block;
+}
+.hico01, .hico02, .hico04 {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/headico.png) no-repeat;
+    position: absolute;
+}
+.clear{
+    clear: both;
+}
+.fcon_01,.fcon_02,.fcon_03,.fcon_04{
+    width: 26px;
+    height: 26px;
+    padding-right: 4px;
+    background: url(../img/form.gif) no-repeat;
+    margin: 0 4px 0 6px;
+    border-right: solid 1px #e8e8e8;
+    float: left;
+    display: inline;
+}
+input{
+    font-size: 12px;
+    border: solid 1px #ddd;
+    color: #6c6c6c;
+    background: none;
+    background-color: #fff;
+    width: 120px;
+    height: 24px;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
+
+//section
+section{
+    width:100%;
+    position: relative;
+    height: 535px;
+    background: #fefefe url(../img/memberbg.jpg) center 0 no-repeat;
+    .section_in{
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        margin-left: 150px;
+        width: 298px;
+        background: #fff;
+        padding: 30px 40px;
+        border: solid 1px #e8e8e8;
+        box-shadow: 3px 3px 7px #eee;
+        
+        form{
+            display:block;
+            font-size:12px;
+            h3{
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 20px;
+                color: #333;
+            }
+            .user{
+                border: solid 1px #e8e8e8;
+                background: #fff;
+                margin-bottom: 10px;
+                padding: 4px 0;
+                color: #999;
+                overflow:hidden;
+                .fcon_01{
+                    float:left;
+                    background: url(../img/form.gif) no-repeat -51px 0;
+                    
+                }
+                .name{
+                    float:left;
+                    width: 240px;
+                    margin: 0 0 0 4px;
+                    position: relative;
+                    input{
+                        width: 100%;
+                        padding: 0;
+                        border: none;
+                        font-size: 12px;
+                        height: 26px;
+                        line-height: 26px;
+                        color: #333;
+                    }
+                }   
+            }
+            .code{
+                color: #999;
+                height: 36px;
+                margin-bottom: 10px;
+                .sub_l{
+                    float: left;
+                    width: 166px;
+                    height: 32px;
+                    display: block;
+                    input{
+                        height: 34px;
+                        width: 98%;
+                        border: solid 1px #e8e8e8;
+                        line-height: 30px;
+                        font-size: 12px;
+                        padding:0 0 0 5px;
+                    }
+                    
+                }
+                .sub_r{
+                    float: right;
+                    display: block;
+                    width:120px;s
+                    img{
+                        dispaly:block;
+                    }
+                }
+            }
+            .codenew{
+                color: #999;
+                height: 36px;
+                margin-bottom: 10px;
+                .codenew_l{
+                    float: left;
+                    border: solid 1px #e8e8e8;
+                    background: #fff;
+                    padding: 4px 0;
+                    display: block;
+                    overflow:hidden;
+                    .fcon_02{
+                        float:left;
+                        background: url(../img/form.gif) no-repeat -80px 0;
+                    }
+                     .c_name{
+                        margin: 0 0 0 4px;
+                        width: 150px;
+                        float: left;
+                        display: inline;
+                        input{
+                            width: 100%;
+                            padding: 0;
+                            border: none;
+                            font-size: 12px;
+                            height: 26px;
+                            line-height: 26px;
+                            color: #333;
+                        }
+                    }
+                }
+                .codenew_r{
+                    float: right;
+                    margin-top: 9px;
+                    display: inline;
+                    a{
+                        color: #669aca;
+                    }
+                }
+            }
+        }
+        .pass,.passagain{
+            @extend .user;
+            .fcon_03{
+                background: url(../img/form.gif) no-repeat -27px 0;
+                
+            }
+        }
+        .mes{
+            height: 30px;
+            color: red;
+        }
+        .register{
+            display: block;
+            .reg_in{
+                width: 298px;
+                height: 48px;
+                background: #333;
+                color: #fff;
+                border: none;
+                border-radius: 3px;
+                font-size: 18px;
+                font-family: "微软雅黑";
+                outline: none;
+                cursor: pointer;
+            }
+        }
+        .login{
+            text-align: right;
+            margin: 20px 0 7px 0;
+            a{
+                color: #669aca;
+            }
+        }
+    }
+}

@@ -1,0 +1,148 @@
+@charset "utf-8"; 
+@import "common";
+@import "header1";
+@import "footer";
+body{
+    width:1263px;
+    height:3531px;
+    font: 12px "微软雅黑",Helvetica,sans-serif;
+    line-height: 1.5;
+    background-color:#fff;
+    color:#555;
+    margin:0 auto;
+}
+
+p {
+    white-space: normal;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+a{
+    color: #666;
+    cursor: pointer;
+}
+input{
+    font-size: 12px;
+    border: solid 1px #ddd;
+    color: #6c6c6c;
+    background: none;
+    background-color: #fff;
+    width: 120px;
+    height: 24px;
+    padding-left: 5px;
+}
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: ".";
+    visibility: hidden;
+    height: 0;
+}
+.float_l{
+    float: left;
+    display: inline;
+}
+.float_r{
+    float: right;
+    display: inline;
+}
+ul{
+    display:block;
+}
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.listcon{
+    li{
+        a{
+            display: block;
+            position: relative;
+            padding: 5px 0 5px 20px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            outline: none;
+        }
+    }
+}
+
+
+.lstCheck,.lstLabed{
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: url(../img/listico.gif) no-repeat;
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+//section
+section{
+    background:#F5F5F5;
+    .section_in{
+        width: 1200px;
+        margin: 0 auto;
+        background:#D9D9D9;//此处为setion_in的背景色，应去掉
+
+        .aside{
+            position: relative;
+            top: 0px;
+            width: 267px;
+            float: left;
+            display: inline;
+            background:#FAEBD7;//此处为aside的背景色，应去掉
+            
+            .listitem{
+//              background: #fff;
+                background: pink;//此处为listitem的背景色，应去掉，用上面的白色背景
+                margin-bottom: 10px;
+                padding: 0 10px;
+                
+                .listitem_tit{
+                    height: 52px;
+                    line-height: 52px;
+                    font-size: 14px;
+                    cursor: pointer;
+                    
+                    .add{
+                        font-size: 24px;
+                        font-family: "宋体";
+                    }
+                }
+                
+                .listitem_m{
+                    padding: 10px 0;
+                    border-top: solid 1px #e8e8e8;
+                    .listitem_m_one{
+                        padding-left: 5px;
+                        ul{
+                            display: block;
+                            .uls_one{
+                             .uls_one_date{
+                                 .lab{
+                                       background-position: -14px -14px;
+                                    }
+                                } 
+                                .uls_one_date_in{
+                                    li{
+                                        background-position: 0 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            
+        }
+        .content{
+            width: 923px;
+            position: relative;
+            float: right;
+            display: inline;
+            background:#E8E8E8;//此处为content的背景色，应去掉
+        }
+    }
+}

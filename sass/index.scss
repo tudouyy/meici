@@ -1,0 +1,210 @@
+@charset "utf-8"; 
+@import "common";
+@import "header1";
+@import "footer";
+body{
+    width:1263px;
+//  height:3531px;
+    font: 12px "微软雅黑",Helvetica,sans-serif;
+    line-height: 1.5;
+    background-color:#fff;
+    color:#555;
+    margin:0 auto;
+}
+
+p {
+    white-space: normal;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+
+//section
+section{
+    width:1263px;
+    height:2714px;
+    color: #555;
+    
+    .section_in{
+        width:1200px;
+        height:2714px;
+        margin:0 auto;
+        
+        .slideshow{
+            height:600px;
+            background-color:antiquewhite;
+            #box{
+                position:relative;
+                width:1200px;
+                height:600px;
+                margin:0 auto;
+                img{
+                    position:absolute;
+                    width:1200px;
+                    height:600px;
+                    
+                    #imgId1{
+                        opacity:1;
+                    }
+                    #imgId2,#imgId3,#imgId4,#imgId5{
+                        opacity:0;
+                    }
+                    #leftArrow{
+                        position:absolute;
+                        left:10px;
+                        top:260px;
+                        cursor:pointer;
+                        width:27px;
+                        height:66px;
+                        background:url(img/bannerjt.png);
+                        background-position:0 -200px;
+                        &:hover{
+                            background-position:0 1px;
+                        }
+                    }
+                    #rightArrow{
+                        position:absolute;
+                        right:10px;
+                        top:260px;
+                        cursor:pointer;
+                        width:27px;
+                        height:66px;
+                        background:url(img/bannerjt.png);
+                        background-position:0 -133px;
+                        &:hover{
+                            background-position:0 -66px;
+                        }
+                    }
+                }
+            }
+        }
+        .sec{
+            .sec_one{
+                width:1200px;
+                height:585px;
+                overflow: hidden;
+                
+                .special{
+                    clear:both;
+                    height:54px;
+                    width:1200px;
+                    position: relative;
+                   
+                    .xian{
+                        border-bottom: 1px solid #e8e8e8;
+                        position: absolute;
+                        top: 24px;
+                        left: 0;
+                        width: 100%;
+                    }
+                    p{
+                        width: 260px;
+                        height:48px;
+                        background: #fff;
+                        margin: 0 auto;
+                        text-align: center;
+                        font-size: 16px;
+                        font-family: 微软雅黑;
+                        color: #333;
+//                      z-index: 2;
+                        position: relative;
+                        
+                        .one{
+                            color: #666;
+                        }
+                        .two{
+                            font-size: 14px;
+                            color: #999;
+                        }
+                        
+                    }
+                }
+                .pic{
+                    height:498px;
+                    width:1200px;
+                    
+                    .pic_l,.pic_m,.pic_r{
+                        float:left;
+                        width:392px;
+                        height:498px;
+                        a{
+                            display:block; 
+                        }
+                    }
+                    
+                    .pic_l,.pic_r{
+                        .sec_2{
+                            margin-top: 10px;
+                            img{
+                                width:392px;
+                                height:243px;
+                            }
+                        }
+                        
+                    } 
+                    .pic_m{
+                            margin: 0 12px;
+                        a{
+                            display:block;
+                            width: 392px;
+                            height: 498px;
+                            
+                            img{
+                                width:392px;
+                                height:498px;
+                            }
+                        }
+                    } 
+                }
+            }
+            
+            .sec_two,.sec_three,.sec_four{
+                @extend .sec_one;
+            }
+            
+            .sec_four{
+               
+                .slideshow2{
+                    height:265px;
+                    position:relative;
+                    .content{
+                        width: 1170px; 
+                        height:265px; 
+                        overflow: hidden; 
+                        margin:0 auto;
+                        ul{ 
+                            width: 1170px; 
+                            height:265px;
+                            margin:0 auto;
+                            li{ 
+                                float: left; 
+                                width: 195px; 
+                                height: 265px; 
+                                display: block;
+                                box-sizing: border-box;
+                            }
+                        }
+                    }
+                    .leftArrow2{
+                        position:absolute;
+                        left:-2px;
+                        top:112px;
+                        width:17px;
+                        height:38px;
+                        cursor:pointer;
+                    }
+                    .rightArrow2{
+                        position:absolute;
+                        right:-2px;
+                        top:112px;
+                        width:17px;
+                        height:38px;
+                        cursor:pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

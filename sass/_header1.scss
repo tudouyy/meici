@@ -1,0 +1,223 @@
+//header 
+header{
+    width:1263px;
+    height:214px;
+    margin-bottom:20px;
+    margin:0 auto;
+    
+    .header_content{
+        height:206px;
+        
+        .top{
+            width:100%;
+            height:35px;
+            background:#f9f9f9;
+            border-bottom:1px solid #f5f5f5;
+            
+            .top_in{
+                width:1200px;
+                height:35px;
+                line-height:35px;
+                margin:0 auto; 
+                a{
+                    color:#555;
+                } 
+                .top_left{
+                    width:240px;
+                    height:35px;
+                    float:left;
+                    
+                    .phone{
+                        float:left;
+                        position:relative;
+                        text-indent:24px;
+                        overflow: hidden;
+                                          
+                        .phoneicon1{
+                            display:block;
+                            width:20px;
+                            height:20px;
+                            position:absolute;
+                            top:8px;
+                            background:url(../img/headico.png)no-repeat;
+                            background-size:105px 20px;
+                        }
+                    }  
+                    .headerApp{
+                        float:left;
+                        position:relative;
+                        cursor:pointer;
+                        position:relative;
+                        text-indent:24px;
+                        padding-left:20px;
+                        &:hover .codepic{
+                            display: block;
+                        }
+                        
+                        .phoneicon2{
+                            position:absolute;
+                            cursor:pointer;
+                            top:7px;
+                            display:block;
+                            width:20px;
+                            height:20px;
+                            background:url(../img/headico.png)no-repeat;
+                            background-size: 105px 20px;
+                            background-position:-20px 0;
+                        }
+                        .codepic{
+                            display:block;
+                            position:absolute;
+                            left:35px;
+                            width:90px;
+                            height:110px;
+                            background:#fff;
+                            display: none;;
+                            border:1px solid #d9d9d9;
+                            z-index: 1;
+                            img{
+                                position:absolute;
+                                left:9px;
+                                top:10px;
+                            }
+                            span{
+                                position:absolute;
+                                left:0px;
+                                top:77px;
+                            }
+                        } 
+                    }  
+                } 
+                
+                .top-right{
+                    float:right;
+                    
+                    .btn{
+                        float:left;
+                        position:relative;
+                        a{
+                            margin-right:24px;
+                        }
+                        a:nth-child(2){
+                            padding-right:27px;
+                            border-right:1px solid #d9d9d9;
+                        }
+                    }
+                    
+                    .shopping{
+                        float:left;
+                        position:relative;
+                        
+                        &:hover .buyCar{
+                            display:block;
+                        }
+                        a{
+                            margin-left:32px;
+                            position:relative;
+                            
+                            .phoneicon3{
+                                position:absolute;
+                                left:-20px;
+                                top:-1px;
+                                display:block;
+                                width:20px;
+                                height:20px;
+                                background:url(../img/headico.png)no-repeat;
+                                background-size: 105px 20px;
+                                background-position:-40px 0;
+                            }
+                        }
+                        .buyCar{
+                            position:absolute;
+                            right:0;
+                            top:30px;
+                            width:380px;
+                            text-align:center;
+                            line-height:80px;
+                            height:80px;
+                            border:1px solid #d9d9d9;
+                            display:none;
+                            background: #fff;
+                            z-index: 1;
+                        }
+                        
+                    }
+                }     
+            }
+        }
+        .middle{
+            position: relative;
+            width: 1200px;
+            height:99px;
+            margin: 0 auto; 
+            clear: both;
+            
+            .logo{
+                width: 360px;
+                text-align: center;
+                margin: 0 auto;
+                padding-top: 35px;
+                
+                .img{
+                    width: 211px;
+                    height: 60px;
+                }
+            }
+            
+            .search{
+                    position: absolute;
+                    top: 45px;
+                    right: 0;
+                input{
+                    float: left;
+                    width: 165px;
+                    height:30px;
+                    padding: 0;
+                    border: none;
+                    height: 29px;
+                    border-bottom: solid 1px #e8e8e8;
+                }
+                a{
+                    float: left;
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    background: url(../img/headico.png) -60px 0 no-repeat;
+                    margin-left: 2px;
+                }
+              
+            }
+        }
+        
+        .bottom{
+            height:71px;
+            padding-top: 10px;
+            position: relative;
+            
+            ul{
+                display: block;
+                clear: both;
+                 li{
+                     float:left;
+                     position: relative;
+                   a{
+                        display: block;
+                        width: 133px;
+                        padding: 15px 0 25px 0;
+                        text-align: center;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }  
+                }
+            }
+        }  
+    }
+    .header_shadow{
+        background: url(../img/shadow.png) 0 bottom repeat-x;
+        width: 100%;
+        height: 8px;
+    }
+}
+
+
+ 

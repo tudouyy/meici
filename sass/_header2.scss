@@ -1,0 +1,57 @@
+//header
+header{ 
+    margin-bottom: 20px;
+    height:154px;
+    .header{
+        width: 100%;
+        background: #fff;
+        .header_in{
+            font-size: 14px;
+            height: 146px;
+            line-height: 146px;
+            width: 1200px;
+            margin: 0 auto;
+            color: #333;
+            .logo{
+                float: left;
+                display: inline;
+                a{
+                    display:block;
+                    width: 131px;
+                    height: 65px;
+                    background: url(../img/logo_02.png) no-repeat;
+                    margin-top: 39px
+                }
+            }
+            .h_right{
+                float: right;
+                display: inline;
+                .help{
+                    float: left;
+                    position: relative;
+                    left: -38px;
+                }
+                .phone{
+                    float: right;
+                    display: inline; 
+                    position:relative;
+                    .hico01{
+                        display:block;
+                        float:left;
+                        top: 63px;
+                        left: -23px;
+                        background-position: 0 0;
+                    } 
+                }
+            }
+        }
+        .header_shadow{
+            background: url(../img/shadow.png) 0 bottom repeat-x;
+            width: 100%;
+            height: 8px;
+        }
+            
+    }
+}
+
+
