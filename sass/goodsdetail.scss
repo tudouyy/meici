@@ -1,13 +1,13 @@
 @charset "utf-8"; 
 @import "common";
-
-
+@import "header1"; 
+@import "footer";
 
 body{
     width:1263px;
     font: 12px "微软雅黑",Helvetica,sans-serif;
     line-height: 1.5;
-    background-color:#fff;
+    background-color:#f5f5f5;
     color:#555;
     margin:0 auto;
 }
@@ -18,40 +18,19 @@ body{
 .clear{
     clear:both;
 }
-.disblock{
-    display:none;
-    background:#fff; 
-    opacity: 0.8;
-    width:1263px;
-    overflow:hidden;
-    position:absolute;
-    top:61px;
-    left:0;
-    text-align: center;
-    border-top:1px solid #eee;
-    
-    ul{
-        display:inline-block; 
-        margin:20px;
-        li{
-            line-height: 24px; 
-            a{
-                display:block;
-                line-height: 24px;
-                color:#333;
-                font-weight:normal;
-                width: 133px;
-                padding: 15px 0 25px 0;
-                text-align: center;
-                font-size: 14px;
-            }
-            .block_li_a{
-                font-weight:bold;
-            }
-        }
-     
-    }
-    
+.box_prev,.box_next{
+    width: 17px;
+    height: 300px;
+    position: absolute;
+    z-index: 3;
+    background: #fff;
+    cursor: pointer;
+}
+.box_prev_m,.box_next_m{
+    width: 17px;
+    position: absolute;
+    height: 38px;
+    top: 100px;
 }
 
 .goods_scroll .prev, .goods_scroll .next, .goods_scroll .prev_cur, .goods_scroll .next_cur {
@@ -62,238 +41,38 @@ body{
     background: url(../img/projt.gif) no-repeat;
     cursor: pointer;
 }
-//header 
+ .guse{
+        height: 63px;
+        padding-top: 15px;
+        border-bottom: solid 1px #e8e8e8;
+        width: 1140px;
+        margin: 0 auto;
+        .guse_in{
+            height: 45px;
+            background: url(../img/m.png) no-repeat center left;
+            color: #1b1b1b;
+            font-size: 14px;
+            padding: 0 0 5px 70px;
+            
+            p:first-child{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                padding: 4px 0 4px 0;
+                color: #999;
+            }
+            p:last-child{
+                line-height: .8;
+                color: #666;
+                font-size: 12px;
+            }
+        }
+    }
+
+//header
 header{
-    width:1263px;
-    height:214px;
-    margin-bottom:20px;
-    margin:0 auto;
-    
-    .header_content{
-        height:206px;
-        
-        .top{
-            width:100%;
-            height:35px;
-            background:#f9f9f9;
-            border-bottom:1px solid #f5f5f5;
-            
-            .top_in{
-                width:1200px;
-                height:35px;
-                line-height:35px;
-                margin:0 auto; 
-                a{
-                    color:#555;
-                } 
-                .top_left{
-                    width:240px;
-                    height:35px;
-                    float:left;
-                    
-                    .phone{
-                        float:left;
-                        position:relative;
-                        text-indent:24px;
-                        overflow: hidden;
-                                          
-                        .phoneicon1{
-                            display:block;
-                            width:20px;
-                            height:20px;
-                            position:absolute;
-                            top:8px;
-                            background:url(../img/headico.png)no-repeat;
-                            background-size:105px 20px;
-                        }
-                    }  
-                    .headerApp{
-                        float:left;
-                        position:relative;
-                        cursor:pointer;
-                        position:relative;
-                        text-indent:24px;
-                        padding-left:20px;
-                        &:hover .codepic{
-                            display: block;
-                        }
-                        
-                        .phoneicon2{
-                            position:absolute;
-                            cursor:pointer;
-                            top:7px;
-                            display:block;
-                            width:20px;
-                            height:20px;
-                            background:url(../img/headico.png)no-repeat;
-                            background-size: 105px 20px;
-                            background-position:-20px 0;
-                        }
-                        .codepic{
-                            display:block;
-                            position:absolute;
-                            left:35px;
-                            width:90px;
-                            height:110px;
-                            background:#fff;
-                            display: none;;
-                            border:1px solid #d9d9d9;
-                            z-index: 1;
-                            img{
-                                position:absolute;
-                                left:9px;
-                                top:10px;
-                            }
-                            span{
-                                position:absolute;
-                                left:0px;
-                                top:77px;
-                            }
-                        } 
-                    }  
-                } 
-                
-                .top-right{
-                    float:right;
-                    
-                    .btn{
-                        float:left;
-                        position:relative;
-                        a{
-                            margin-right:24px;
-                        }
-                        a:nth-child(2){
-                            padding-right:27px;
-                            border-right:1px solid #d9d9d9;
-                        }
-                    }
-                    
-                    .shopping{
-                        float:left;
-                        position:relative;
-                        
-                        &:hover .buyCar{
-                            display:block;
-                        }
-                        a{
-                            margin-left:32px;
-                            position:relative;
-                            
-                            .phoneicon3{
-                                position:absolute;
-                                left:-20px;
-                                top:-1px;
-                                display:block;
-                                width:20px;
-                                height:20px;
-                                background:url(../img/headico.png)no-repeat;
-                                background-size: 105px 20px;
-                                background-position:-40px 0;
-                            }
-                        }
-                        .buyCar{
-                            position:absolute;
-                            right:0;
-                            top:30px;
-                            width:380px;
-                            text-align:center;
-                            line-height:80px;
-                            height:80px;
-                            border:1px solid #d9d9d9;
-                            display:none;
-                            background: #fff;
-                            z-index: 1;
-                        }
-                        
-                    }
-                }     
-            }
-        }
-        .middle{
-            position: relative;
-            width: 1200px;
-            height:99px;
-            margin: 0 auto; 
-            clear: both;
-            
-            .logo{
-                width: 360px;
-                text-align: center;
-                margin: 0 auto;
-                padding-top: 35px;
-                
-                .img{
-                    width: 211px;
-                    height: 60px;
-                }
-            }
-            
-            .search{
-                    position: absolute;
-                    top: 45px;
-                    right: 0;
-                input{
-                    float: left;
-                    width: 165px;
-                    height:30px;
-                    padding: 0;
-                    border: none;
-                    height: 29px;
-                    border-bottom: solid 1px #e8e8e8;
-                }
-                a{
-                    float: left;
-                    display: block;
-                    width: 20px;
-                    height: 20px;
-                    background: url(../img/headico.png) -60px 0 no-repeat;
-                    margin-left: 2px;
-                }
-              
-            }
-        }
-        
-        .bottom{
-            padding-top: 10px;
-            position: relative;
-
-            
-            .bottom_top{
-                display: block;
-                overflow:hidden;
-                
-                 .bottom_lis{
-                     float:left;
-                   a{
-                        display: block;
-                        width: 133px;
-                        padding: 15px 0 25px 0;
-                        text-align: center;
-                        font-size: 14px;
-                        font-weight: bold;
-                        
-                        span {
-                            display: block;
-                            &:hover .disblock{
-                            display:block;
-                            } 
-                       }  
-                        
-                         
-                        
-                        
-                    }  
-                }
-            }
-        }  
-    }
-    .header_shadow{
-        background: url(../img/shadow.png) 0 bottom repeat-x;
-        width: 100%;
-        height: 8px;
-    }
+    margin-bottom: 20px;
 }
-
+//section
 section{
     width: 1200px;
     margin: 0 auto;
@@ -302,6 +81,7 @@ section{
         .section_top{
             background: #fff;
             padding: 70px 0;
+            overflow:hidden;
             .prot_l{
                 width: 510px;
                 float: left;
@@ -364,11 +144,189 @@ section{
                 .prot_img_big{
                     float: left;
                     margin-left: 20px;
+                    .bigimg_a{
+                            width: 384px;
+                            height: 460px;
+                            display: block;
+                        .zoopadimg{
+                            float: left;
+                            position: relative;
+                            cursor: crosshair;
+                            z-index: 9;
+                            
+                            &:hover{
+                               .imgone_mouse {
+                                   display:block;
+                               }
+                               .imgvis{ 
+                                   display:block;
+                               }
+                            }
+                            .img_one{
+                                opacity:1;
+                                height: 460px;
+                            }
+                            .imgone_mouse{
+                                top: 193px;
+                                left: 151px;
+                                width: 185px;
+                                height: 220px;
+                                position: absolute;
+                                border-width: 1px;
+                                display: none; 
+                                background-color: #fff;
+                                opacity: 0.6;
+                                border: 1px solid #eee;
+                                cursor: pointer;
+                                z-index: 11;  
+                            }
+                            .imgvis{
+                                position: absolute;
+                                left: 448px;
+                                top: 0px;
+                                z-index: 99;
+                                width: 390px;
+                                height: 462px;
+                                display: none; 
+                                overflow:hidden;
+                                border: solid 1px #eee;
+                                background: #fff;
+                               .img_bigs{
+                                   position: absolute;
+                                    left:0;
+                                    top:0;
+                               }
+                            }
+                        }
+                    }
+                    
                 }
             }
             .prot_r{
                 padding: 20px 0 0 85px;
                 width: 425px;
+                float:left;
+                .pro_tit{
+                    a{
+                        font-size: 24px;
+                        display: block;
+                        color: #333;
+                    }
+                }
+                .tit2{
+                    width:425px;
+                    height:27px;
+                    .tit2wo{
+                         display:block;
+                         font-size: 14px;
+                         float:left;
+                         max-width: 341px;
+                         margin-top: 4px;
+                         margin-right: 20px;
+                    }
+                    .tit2lo{
+                        display:block;
+                        float:left;
+                        width: 48px;
+                        height: 24px;
+                        background: url(../img/saleTip1.png) -1px -3px no-repeat;
+                        margin-top: 3px;
+                    }
+                }
+               
+                .tit_price{
+                    margin: 20px 0 14px;
+                    color: #333;
+                    em{
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                }
+                .pro_color{
+                    width:425px;
+                    height:24px;
+                    .col_wo{
+                        display: inline-block;
+                         color: #999;
+                         width:55px;
+                         vertical-align: middle;
+                         
+                    }
+                    .col{
+                        width: 22px;
+                        height: 22px;
+                        background: url(../img/color.gif) -22px 0 no-repeat;
+                        display: inline-block;
+                        border:1px solid #000;
+                        vertical-align: middle;
+                        border-radius: 2px;;
+                    }
+                }
+                .pro_btn{
+                    margin-top:30px;
+                    overflow:hidden;
+                    button{
+                        font-size: 14px;
+                        overflow: hidden;
+                        color: #fff;
+                        border: 0;
+                        cursor: pointer;
+                        border-radius: 2px;
+                    }
+                    .shopping{
+                        background: #333;
+                        width: 152px;
+                        height: 45px;
+                        float: left;
+                        display: inline;
+                    }
+                    .shopcar{
+                        background: #c53f40;
+                        margin-left: 10px;
+                        width: 143px;
+                        height: 45px;
+                        float: left;
+                        display: inline;
+                    }
+                    a{
+                        display:block;
+                        width: 43px;
+                        height: 43px;
+                        background: url(../img/pst.gif) no-repeat;
+                        border: solid 1px #e8e8e8;
+                        margin-left: 10px;
+                    }
+                    .like{
+                        float: left; 
+                        background-position: 0 -13px;
+                    }
+                    .share{
+                        float: left;
+                        width: 43px;
+                        height: 43px;
+                        background: url(../img/pst.gif) 0 -56px no-repeat;
+                        position: relative;
+                    }
+                }
+                .runout{
+                    margin-top: 20px;
+                    color: #999;
+                    li{
+                        padding: 15px 0;
+                        border-bottom: solid 1px #f5f5f5;
+                        height:37px;
+                        span:first-child{
+                            width: 78px;
+                            float: left;
+                            display: block;
+                        }
+                        span:last-child{
+                            width: 345px;
+                            float: right;
+                            display: block;
+                        }
+                    }
+                }
             }
         }
         .prot_recom{
@@ -380,17 +338,114 @@ section{
             margin-top: 20px;
             height: 60px;
             overflow: hidden;
+            background: #fff;
         }
         .prot_detail{
             margin-top: 20px;
+            border: solid 1px #e8e8e8;
+            background: #fff;
+            .prot_detail_img{
+                    width: 1110px;
+                    margin: 0 auto;
+                .detail_box{
+                    overflow: hidden;
+                    li{
+                        float: left;
+                        margin: 0 35px 70px 35px;
+                        font-size: 0;
+                        img{
+                            width:485px;
+                        }
+                    }
+                }
+            }
         }
         .cart_like{
-            margin-top: 20px;
-            background: #fff;
-            padding: 0 20px;
+                margin-top: 20px;
+                border: solid 1px #e8e8e8;
+                background: #fff;
+                .shop_slideshow{
+                    width: 1140px;
+                    margin: 0 auto;
+                    .slide_box{
+                        width: 1048px;
+                        height: 360px;
+                        padding: 20px 40px;
+                        margin: 0 auto;
+                        position: relative;
+                        left: 0px;
+                        overflow: hidden;
+                        
+                        .box_prev{
+                            left: 0;
+                            .box_prev_m{
+                                background: url(../img/pre_btn.png) no-repeat;
+                            }
+                       
+                        }
+                            
+                        .box_next{ 
+                            right: 0;
+                            .box_next_m{
+                                background: url(../img/next_btn.png) no-repeat;
+                            }
+                        }
+                        .box_uls{
+                            position:relative;
+                            z-index: 1;
+                            width: 5240px; 
+                            left:0;
+                            top:0;
+                            overflow: hidden;
+                            li{
+                                overflow: hidden;
+                                float: left;
+                                width: 220px;
+                                height: 382px;
+                                margin: 0 21px;
+                                line-height: 1.2;
+                                text-align: center;
+                                display: inline;
+                                position: relative;
+                                .li_pic{
+                                    display: block;
+                                    color: #666;
+                                    cursor: pointer;
+                                    img{
+                                        width: 160px;
+                                        height: 192px;
+                                    }
+                                    .li_pic_name{
+                                        padding: 10px 16px 16px 16px;
+                                        line-height: 2;
+                                        margin-bottom: 5px;
+                                        overflow: hidden;
+                                    }
+                                }   
+                                .li_price{
+                                    color: #ccc;
+                                    margin-top: 10px;
+                                }
+                                .li__addcart{
+                                    display: block;
+                                    width: 126px;
+                                    height: 33px;
+                                    line-height: 33px;
+                                    border: solid 1px #e8e8e8;
+                                    margin: 25px auto 30px;
+                                    text-align: center;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                } 
         }
     }
 }
-
+//footer
+footer{
+        margin-top: 30px;
+}
 
  

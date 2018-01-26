@@ -1,19 +1,56 @@
-//header 
+//header
+
+.disblock{
+    display:none;  
+    background:#fff; 
+    overflow:hidden;
+    position:absolute;
+    top:61px;
+    left:0;
+    width: 100%;
+    padding: 25px 0 65px 0;
+    text-align: center;
+    border-top: solid 1px #e8e8e8;
+    opacity: .95;
+    z-index: 99;
+    
+    ul{
+        display:inline-block; 
+        margin:20px;
+        width: 200px;
+        margin: 0 30px;
+        li{
+            padding: 7px 0;
+            font-size: 14px;
+            overflow: hidden;
+            a{
+                display:block;
+                color: #666;
+                font-weight:normal;
+            }
+            .block_li_a{
+                font-weight: bold;
+            }
+        }
+     
+    }
+    
+}
+
+ 
 header{
     width:1263px;
     height:214px;
     margin-bottom:20px;
     margin:0 auto;
-    
     .header_content{
         height:206px;
-        
+        background: #fff;
         .top{
             width:100%;
             height:35px;
             background:#f9f9f9;
             border-bottom:1px solid #f5f5f5;
-            
             .top_in{
                 width:1200px;
                 height:35px;
@@ -26,13 +63,11 @@ header{
                     width:240px;
                     height:35px;
                     float:left;
-                    
                     .phone{
                         float:left;
                         position:relative;
                         text-indent:24px;
                         overflow: hidden;
-                                          
                         .phoneicon1{
                             display:block;
                             width:20px;
@@ -88,7 +123,6 @@ header{
                         } 
                     }  
                 } 
-                
                 .top-right{
                     float:right;
                     
@@ -190,17 +224,20 @@ header{
         }
         
         .bottom{
-            height:71px;
             padding-top: 10px;
             position: relative;
-            
-            ul{
+            .bottom_top{
                 display: block;
-                clear: both;
-                 li{
+                overflow:hidden;
+                
+                 .bottom_lis{
                      float:left;
-                     position: relative;
-                   a{
+                     &:hover {
+                         .disblock{
+                            display:block;
+                        } 
+                   }
+                   .lis_a{
                         display: block;
                         width: 133px;
                         padding: 15px 0 25px 0;
@@ -217,7 +254,4 @@ header{
         width: 100%;
         height: 8px;
     }
-}
-
-
- 
+} 

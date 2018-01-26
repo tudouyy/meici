@@ -10,8 +10,8 @@ function initEvent(){
 	$("#box").mouseenter(function(){
 		stopPlay();
 	});
-	//鼠标离开时自动播放
-	$("#box").mouseleave(function(){
+	//鼠标离开时自动播放  
+	$("#box").mouseleave(function(){ 
 		autoPlay();
 	});
 

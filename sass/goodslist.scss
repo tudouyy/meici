@@ -4,10 +4,10 @@
 @import "footer";
 body{
     width:1263px;
-    height:3531px;
+//  height:3531px;
     font: 12px "微软雅黑",Helvetica,sans-serif;
     line-height: 1.5;
-    background-color:#fff;
+    background:#F5F5F5;
     color:#555;
     margin:0 auto;
 }
@@ -53,37 +53,27 @@ li{
     display: list-item;
     text-align: -webkit-match-parent;
 }
-.listcon{
-    li{
-        a{
-            display: block;
-            position: relative;
-            padding: 5px 0 5px 20px;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            outline: none;
-        }
-    }
-}
-
-
-.lstCheck,.lstLabed{
+em{
     display: block;
-    width: 14px;
-    height: 14px;
-    background: url(../img/listico.gif) no-repeat;
+    width: 10px;
+    height: 12px;
+    background: url(../img/crumbsIco.gif) no-repeat;
     position: absolute;
-    left: 0;
-    top: 7px;
+    right: 0;
+    top: 21px;
+    font-size: 100%;
+}
+//header
+header{
+    margin-bottom: 20px;
 }
 //section
 section{
     background:#F5F5F5;
+    
     .section_in{
         width: 1200px;
         margin: 0 auto;
-        background:#D9D9D9;//此处为setion_in的背景色，应去掉
 
         .aside{
             position: relative;
@@ -91,58 +81,170 @@ section{
             width: 267px;
             float: left;
             display: inline;
-            background:#FAEBD7;//此处为aside的背景色，应去掉
             
             .listitem{
-//              background: #fff;
-                background: pink;//此处为listitem的背景色，应去掉，用上面的白色背景
+                background: #fff;
                 margin-bottom: 10px;
                 padding: 0 10px;
-                
+//              background:#FAEBD7;//此处为listitem的背景色，应去掉
                 .listitem_tit{
                     height: 52px;
                     line-height: 52px;
                     font-size: 14px;
                     cursor: pointer;
-                    
-                    .add{
+                    .tit_lis{
                         font-size: 24px;
                         font-family: "宋体";
                     }
                 }
-                
-                .listitem_m{
+                .listitem_mid{
                     padding: 10px 0;
                     border-top: solid 1px #e8e8e8;
-                    .listitem_m_one{
+                    ul{
                         padding-left: 5px;
-                        ul{
-                            display: block;
-                            .uls_one{
-                             .uls_one_date{
-                                 .lab{
-                                       background-position: -14px -14px;
-                                    }
-                                } 
-                                .uls_one_date_in{
-                                    li{
-                                        background-position: 0 0;
-                                    }
-                                }
-                            }
-                        }
                     }
                 }
-            }
-            
-            
-        }
+            } 
+        }     
         .content{
             width: 923px;
             position: relative;
             float: right;
             display: inline;
-            background:#E8E8E8;//此处为content的背景色，应去掉
+            .content_top{
+                height: 55px;
+                line-height: 55px;
+                background: #fff;
+                .content_top_l{
+                    float:left;
+                    margin-left: 25px;
+                    span{
+                        font-weight: bold;
+                        display: inline-block;
+                    }
+                    a{
+                        margin-left: 35px;
+                        display: inline-block;
+                        padding-right: 12px;
+                        position: relative;
+                        .prSort01{
+                            background-position: -62px 0;
+                        }
+                    }
+                }
+                
+                .content_top_r{
+                    .top_res{
+                        display: inline-block;
+                        margin: 2px 25px 0 0;
+                        color: #b3b3b3;
+                        margin-right: 18px; 
+                    }
+                    .numone{
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        background: #333;
+                        color: #fff;
+                        border: solid 1px #333;
+                        border-radius: 2px;
+                        line-height: 22px;
+                        margin-right: 18px;
+                        vertical-align: baseline;
+                        text-align: center;
+                    }
+                    .numtwo{
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 18px;
+                        line-height: 22px;
+                        vertical-align: baseline;
+                        text-align: center;
+                    }
+                    .numnext{
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 18px;
+                        background: url(../img/pagin.gif) no-repeat;
+                        background-position: -20px 0;
+                        line-height: 22px;
+                        vertical-align: middle;
+                        text-align: center;
+                    }
+                }
+                
+            }
+            .content_bottom{
+                margin-top: 5px;
+                width: 928px;
+                position: relative;
+                
+                li{
+                    float: left;
+                    width: 205px;
+                    padding: 10px;
+                    margin: 0 5px 5px 0;
+                    border: solid 1px #fff;
+                    background: #fff;
+                    transition-duration: .1s;
+                    transition-timing-function: linear;
+                    position: relative;
+                    &:hover{
+                        border: solid 1px #eee;
+                        box-shadow: 0 0 5px #d9d9d9;
+                    }
+                    .goodslist_pic{
+                        display: block;
+                        width: 207px;
+                        height: 230px;
+                        text-align: center;
+                        padding-top: 10px;
+                        img{
+                            display: inline;
+                            width: 180px;
+                        }
+                    }
+                    .goodslist_tit{
+                        display: block;
+                        height: 45px;
+                        padding: 0 20px 9px 20px;
+                        line-height: 2;
+                        margin-top:36px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        span{
+                            display:block;
+                        }
+                        span:first-child{
+                            color: #333;
+                            font-weight: bold;
+                        }
+                    }
+                    .goodslist_price{
+                        height: 26px;
+                        padding: 0 20px 15px 20px;
+                        
+                        span{
+                            color: #999;
+                            height: 18px;
+                            line-height: 18px;
+                            padding: 1px 0;
+                            display: inline-block;
+                        }
+                        
+                    }
+                }
+            }
+            .content_next{
+                padding-top: 5px;
+                margin-bottom: 20px;
+            }
         }
     }
+} 
+//footer
+footer{
+    margin-top: 30px;
 }

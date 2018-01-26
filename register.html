@@ -29,11 +29,11 @@
 <!--section-->
 <section>
 	<div class="section_in">
-		<form action="">
+		<form action="php/regsave.php" method="post" id="f">
 			<h3>注册美西账户</h3>
 			<div class="user">
 				<p class="fcon_01"></p>
-				<p class="name"><input type="text" id="phoneId" placeholder="请输入常用手机号" /></p>
+				<p class="name"><input type="text" name="username" id="phoneId" placeholder="请输入常用手机号" /></p>
 			</div>
 			<div class="code">
 				<p class="sub_l"><input type="text"  placeholder="请输入验证码" /></p>
@@ -50,7 +50,7 @@
 			</div>
 			<div class="pass">
 				<p class="fcon_03"></p>
-				<p class="name"><input type="password" id="passId" placeholder="请输入密码" /></p>
+				<p class="name"><input type="password" name="userpass" id="passId" placeholder="请输入密码" /></p>
 			</div>
 			<div class="passagain">
 				<p class="fcon_03"></p>
@@ -60,7 +60,8 @@
 				<span id="Msg"></span>
 			</div>
 			<div class="register">
-				<button type="button" id="btn" class="reg_in">注册</button>
+				<!--<button type="button" id="btn" class="reg_in">注册</button>-->
+				<input type="submit" id="btn" class="reg_in" value="注册"/>
 			</div>
 			<div class="login">
 				已注册？
@@ -70,7 +71,7 @@
 	</div>
 </section>
 
-<!--footer-->
+<!--footer-->  
 <footer>
 	<div class="footer-in">
 		<div class="foot_top">
