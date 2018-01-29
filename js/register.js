@@ -2,22 +2,11 @@ function $(id){
 	return document.getElementById(id);
 }
 
-function getCookie(cookieName){
-	var cookieStr = unescape(document.cookie);
-	var arr = cookieStr.split("; ");
-	var value="";
-	for(var i in arr){
-		if(arr[i].indexOf(cookieName+"=")==0){
-			value=arr[i].substring((cookieName+"=").length);
-			break;
-		}
-	}	
-	return value;
-}
+f
 window.onload = function(){
 	//1加载cookie
 	var phoneIds = getCookie("phoneId");
-//	var passIds= getCookie("passId");
+	var passIds = getCookie("passId");
 	
 	//2.手机号
 	$("phoneId").onblur = function(){
@@ -60,13 +49,8 @@ window.onload = function(){
 	
 	//5.点击注册保存，cookie
 	$("btn").onclick = function(){
-		var d = new Date();
-		var t = d.getDate()+10;
-		d.setDate(t);
-		var phone = $("phoneId").value;
-		document.cookie="phoneId="+phone+";expires="+d.toGMTString();
+		saveCookie('goodsId',goodsIds,7);
+		saveCookie('passId',goodsIds,7);
 	}
-	
-	
 }
 	

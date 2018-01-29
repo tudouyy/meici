@@ -1,5 +1,14 @@
  
  (function(){
+	//左侧边栏点击跳转
+     $('.prev').on('click',function() {
+        $('.scroll_img').animate({top:'-84px'},1000)
+    });
+    $('.next').on('click',function() {
+        $('.scroll_img').animate({top:'0'},1000)
+    });
+    
+    
 	//底部点击跳转
      $('.box_prev_m').on('click',function() {
         $('.box_uls').animate({left:'-1048px'},1000)
@@ -8,6 +17,7 @@
         $('.box_uls').animate({left:'0'},1000)
     });
  	
+    
  	
    	$("#box").mousemove((evt)=>{
 		let offset=$("#box").offset();
@@ -33,4 +43,6 @@
 		$("#imges").css({"left":-2*smallBoxLeft});
 		$("#imges").css({"top":-2*smallBoxTop});
 	});
+	
+	
  })(jQuery);

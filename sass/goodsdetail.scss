@@ -15,6 +15,10 @@ body{
     float: left;
     display: inline;
 }
+.float_r{
+      float: right;
+    display: inline;
+}
 .clear{
     clear:both;
 }
@@ -33,7 +37,7 @@ body{
     top: 100px;
 }
 
-.goods_scroll .prev, .goods_scroll .next, .goods_scroll .prev_cur, .goods_scroll .next_cur {
+.goods_scroll .prev, .goods_scroll .next,{
     width: 50px;
     height: 16px;
     display: block;
@@ -67,11 +71,58 @@ body{
             }
         }
     }
+.tit2lo{
+    display: inline-block;
+    float:left;
+    width: 48px;
+    height: 24px;
+    background: url(../img/saleTip1.png) no-repeat;
+}
 
-//header
+
+.disblock{
+    display:none;  
+    background:#fff; 
+    overflow:hidden;
+    position:absolute;
+    top:61px;
+    left:0;
+    width: 100%;
+    padding: 25px 0 65px 0;
+    text-align: center;
+    border-top: solid 1px #e8e8e8;
+    opacity: .95;
+    z-index: 99;
+    
+    ul{
+        display:inline-block; 
+        margin:20px;
+        width: 200px;
+        margin: 0 30px;
+        li{
+            padding: 7px 0;
+            font-size: 14px;
+            overflow: hidden;
+            a{
+                display:block;
+                color: #666;
+                font-weight:normal;
+            }
+            .block_li_a{
+                font-weight: bold;
+            }
+        }
+     
+    }
+    
+}
 header{
     margin-bottom: 20px;
+   
 }
+ 
+
+
 //section
 section{
     width: 1200px;
@@ -90,35 +141,24 @@ section{
                     float: left;
                     .goods_scroll{
                         height: 420px;
-                        width: 52px;
+                        width: 54px;
                         padding: 20px 0;
                         overflow: hidden;
                         position: relative;
                         .prev{
                             top: 3px;
                             left: 0;
-                            display: none;
                             background-position: center 0;
                         }
-                        .prev_cur{
-                            top: 3px;
-                            left: 0;
-                            background-position: center -32px;
-                        }
+                       
                         .next{
                             display: block;
                             bottom: 0;
                             left: 0;
                             background-position: center -16px;
                         }
-                        .next_cur{
-                            display: none;
-                            bottom: 0;
-                            left: 0;
-                            background-position: center -48px;
-                        }
                         .scroll_mask{
-                            width: 52px;
+                            width: 54px;
                             height: 420px;
                             position: relative;
                             overflow: hidden;
@@ -127,13 +167,17 @@ section{
                                 top: 0px;
                                 position: relative;
                                 .list_edit{
-                                    margin-top: 7px;
+                                    margin-top: 8px;
                                     height: 62px;
                                     a{
                                         img{
                                             border: solid 1px #fff;
                                             width: 50px;
-                                            height: 60px;   
+                                            height: 60px; 
+                                            border:1px solid transparent;
+                                             &:hover{
+                                                border:1px solid #D9D9D9;
+                                            } 
                                         }
                                     }
                                 }
@@ -225,12 +269,8 @@ section{
                          margin-right: 20px;
                     }
                     .tit2lo{
-                        display:block;
-                        float:left;
-                        width: 48px;
-                        height: 24px;
-                        background: url(../img/saleTip1.png) -1px -3px no-repeat;
                         margin-top: 3px;
+                        background-position: -1px -3px;
                     }
                 }
                
@@ -265,7 +305,7 @@ section{
                 .pro_btn{
                     margin-top:30px;
                     overflow:hidden;
-                    button{
+                   input{
                         font-size: 14px;
                         overflow: hidden;
                         color: #fff;
@@ -273,12 +313,13 @@ section{
                         cursor: pointer;
                         border-radius: 2px;
                     }
-                    .shopping{
+                    .shoppings{
                         background: #333;
                         width: 152px;
                         height: 45px;
                         float: left;
                         display: inline;
+                        color: #fff;
                     }
                     .shopcar{
                         background: #c53f40;
@@ -287,6 +328,7 @@ section{
                         height: 45px;
                         float: left;
                         display: inline;
+                        color: #fff;
                     }
                     a{
                         display:block;

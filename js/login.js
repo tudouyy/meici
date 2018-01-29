@@ -2,7 +2,7 @@ function $(id){
 	return document.getElementById(id);
 }
 window.onload = function(){
-	
+
 	//1)	用户名手机或邮箱
 	$("userId").onblur = function(){		
 	   var regUser = /^\d{11}$/;
@@ -23,5 +23,7 @@ window.onload = function(){
 	   		$("Msg").innerHTML = "用户名或密码错误 ";
 	   }
 	}
+	
+
 	
 }

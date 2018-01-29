@@ -29,17 +29,53 @@
 				
 				<div class="top-right">
 					<div class="btn">
-						<a href="#">登录</a>
-						<a href="#">注册</a>
+						<a href="login.html">登录</a>
+						<a href="register.html">注册</a>
+					</div>
+					<div class="logined">
+						欢迎您:<span class="logined_span"></span>
 					</div>
 					<div class="shopping">
-						<a href="#">
+						<a href="shopping.html">
 							<span class="phoneicon3"></span>
-							<span>购物袋（0）</span>
+							<span>购物袋(<span class="heshop_num">0</span>)</span>
 						</a>
-						<p class="buyCar">
-							您的购物袋是空的
-						</p>
+						<div class="buyCar">
+							<div class="buygoods_no">您的购物袋是空的</div>
+							<div class="buygoods_have">
+								<p class="have_tit">我的商品</p>
+								<div class="have_con clear">
+									<div class="con_l float_l ">
+										<a href="#">
+											<img src="img/goodsbigimg.jpg" alt="" />
+										</a>
+									</div>
+									<div class="con_m">
+										<span class="span_1">Brookstone </span>
+										<span class="span_2">熊猫耳机 真无线耳机</span>
+										<span class="span_3">￥458.00&nbsp;&nbsp;</span>
+										<span class="span_4">
+											╳
+											<!--<input type="text" class="in_4" id="cart_num"  value="0"/>-->
+											<span  class="in_4" id="cart_num">0</span>
+										</span>
+										
+										<div class="clear">
+											<div class="span_5 tit2lo">
+											</div>
+										</div>
+									</div>
+									<div class="con_r">╳</div>
+								</div>
+								<div class="have_bot clear">
+									<div class="btom_l float_l">
+										商品合计：￥
+										<span class="span_6">458.00</span>
+									</div>
+									<a class="btom_r float_r" href="shopping.html">去结算</a> 
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -60,10 +96,10 @@
 		<div class="bottom">
 			 <ul class="bottom_top">
                 <li class="bottom_lis">
-                	<a href="#" title="首页" class="lis_a">首页</a>
+                	<a href="index.html" title="首页" class="lis_a">首页</a>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="就近单品" class="lis_a">就近单品</a>
+                	<a href="goodslist.html" title="就近单品" class="lis_a">就近单品</a>
                 	<div class="disblock">
 		        		<ul>
 		        			<li><a class="block_li_a" href="#">男仕 Man</a></li>
@@ -82,10 +118,10 @@
             		</div>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="全球购" class="lis_a">全球购</a>
+                	<a href="goodslist.html" title="全球购" class="lis_a">全球购</a>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="女士" class="lis_a">女士</a>
+                	<a href="goodslist.html" title="女士" class="lis_a">女士</a>
                 	<div class="disblock">
 		        		<ul>
 		        			<li><a class="block_li_a" href="#">包袋 Bags</a></li>
@@ -118,7 +154,7 @@
             		</div>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="男仕" class="lis_a">男仕</a>
+                	<a href="goodslist.html" title="男仕" class="lis_a">男仕</a>
                 	<div class="disblock">
 		        		<ul>
 		        			<li><a class="block_li_a" href="#">包袋 Bags</a></li>
@@ -151,7 +187,7 @@
             		</div>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="家居生活" class="lis_a">家居生活</a>
+                	<a href="goodslist.html" title="家居生活" class="lis_a">家居生活</a>
                 	<div class="disblock">
 		        		<ul>
 		        			<li><a class="block_li_a" href="#">男仕 Man</a></li>
@@ -170,7 +206,7 @@
             		</div>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="腕表" class="lis_a">腕表</a>
+                	<a href="goodslist.html" title="腕表" class="lis_a">腕表</a>
                 	<div class="disblock">
 		        		<ul>
 		        			<li><a class="block_li_a" href="#">男士腕表</a></li>
@@ -189,7 +225,7 @@
             		</div>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="品牌" class="lis_a">品牌</a>
+                	<a href="goodslist.html" title="品牌" class="lis_a">品牌</a>
                 	<div class="disblock">
 		        		<ul>
 		        			<li><a class="block_li_a" href="#">男仕 Man</a></li>
@@ -208,7 +244,7 @@
             		</div>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="Mzine" class="lis_a">Mzine</a>
+                	<a href="goodslist.html" title="Mzine" class="lis_a">Mzine</a>
                 </li>
         	</ul>
        		<div class="clear"></div>
@@ -226,14 +262,22 @@
 				<div class="prot_img_sma">
 					<div class="goods_scroll">
 						<div class="prev"></div>
-						<div class="prev_cur"></div>
 						<div class="next"></div>
-						<div class="next_cur"></div>
 						<div class="scroll_mask">
-							<ul class="scroll_img">
+							<ul class="scroll_img" id="ulbox">
+								<!--<li class="list_edit">
+									<a href="#">
+										<img src="img/goodsbigimg1.jpg"alt="" />
+									</a>
+								</li>
 								<li class="list_edit">
 									<a href="#">
-										<img src="img/srcoll3.jpg" alt="" />
+										<img src="img/goodslist5.jpg"alt="" />
+									</a>
+								</li>
+								<li class="list_edit">
+									<a href="#">
+										<img src="img/goodsbigimg1.jpg" alt="" />
 									</a>
 								</li>
 								<li class="list_edit">
@@ -243,27 +287,17 @@
 								</li>
 								<li class="list_edit">
 									<a href="#">
-										<img src="img/srcoll1.jpg" alt="" />
+										<img src="img/srcoll2.jpg" alt="" />
 									</a>
 								</li>
 								<li class="list_edit">
 									<a href="#">
-										<img src="img/srcoll1.jpg" alt="" />
+										<img src="img/goodslist5.jpg" alt="" />
 									</a>
 								</li>
-								<li class="list_edit">
+								<li class="list_edit">-->
 									<a href="#">
-										<img src="img/srcoll1.jpg" alt="" />
-									</a>
-								</li>
-								<li class="list_edit">
-									<a href="#">
-										<img src="img/srcoll1.jpg" alt="" />
-									</a>
-								</li>
-								<li class="list_edit">
-									<a href="#">
-										<img src="img/srcoll1.jpg" alt="" />
+										<img src="img/srcoll2.jpg"alt="" />
 									</a>
 								</li>
 							</ul>
@@ -284,33 +318,28 @@
 				</div>
 			</div>
 			<!--右侧-->
-			<div class="prot_r float_r">
-				<!--品牌以及商品标题-->
-				<hi class="pro_tit">
+			<div class="prot_r float_r" id="titId">
+			<!--内容全部写在js里-->
+				<!--<hi class="pro_tit">
 					<a class="pro_tit_a " href="#" title="了解品牌" target="_blank">Brookstone </a>
 				</hi>
 				<div  class="tit2">
 					<span class="tit2wo">熊猫耳机 真无线耳机</span>
 					<span class="tit2lo"></span>
 				</div>
-				
-				<!--参考价格-->
 				<div class="tit_price">
 					￥<em>458.00</em>
 				</div>
-				<!--选择颜色-->
 				<div class="pro_color">
 					<span class="col_wo">颜色</span>
 					<span class="col"></span>
 				</div>
-				<!--购买按钮-->
 				<div class="pro_btn">
-					<button class="shopping">即刻购买</button>
-					<button class="shopcar">加入购物袋</button>
+					<input type="button" class="shoppings" value="即刻购买"/>
+					<input type="button" class="shopcar" id="addcart" value="加入购物袋"/>
 					<a href="#" titile="加入收藏" class="like"></a>
 					<a href="#" class="share"></a>
 				</div>
-				<!--售罄状态-->
 				<div class="runout">
 					<ul>
 						<li>
@@ -322,8 +351,7 @@
 							<span >若该商品无质量问题不支持退换货</span>
 						</li>
 					</ul>
-					
-				</div>
+				</div>-->
 			</div>
 		</div>
 		<div class="prot_recom"></div>
@@ -480,10 +508,13 @@
 						<img src="img/shopp.jpg" alt="" />
 					</li>
 					<li>
-						<img src="img/goodsbigimg.jpg" alt="" />
+						<img src="img/srcoll3.jpg" alt="" />
 					</li>
 					<li>
-						<img src="img/srcoll2.jpg" alt="" />
+						<img src="img/srcoll3.jpg" alt="" />
+					</li>
+					<li>
+						<img src="img/srcoll3.jpg" alt="" />
 					</li>
 					<li>
 						<img src="img/shopp.jpg" alt="" />
@@ -492,7 +523,7 @@
 						<img src="img/goodsbigimg.jpg" alt="" />
 					</li>
 					<li>
-						<img src="img/srcoll2.jpg.jpg" alt="" />
+						<img src="img/srcoll2.jpg" alt="" />
 					</li>
 					<li>
 						<img src="img/goodsbigimg.jpg" alt="" />
@@ -684,7 +715,7 @@
 				
 				<div class="in_three">
 					<p class="foot_to">订阅美西杂志</p>
-                	<input class="foot_mi" type="text" value="" placeholder="E-mail">
+                	<input class="foot_mi" type="text" value="" placeholder="E-mail"/>
                 	<div class="foot_bt" >即刻订阅</div>
 				</div>
 				
@@ -752,3 +783,114 @@
 </html>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/goodsdetail.js"></script>
+<script type="text/javascript" src="js/cookieTools.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var phoneIds = getCookie("phoneId")
+		$.ajax({
+            url:"php/getGoodsInfo.php",
+            type:"get",
+            data:{"goodsId":getCookie('goodsId')},
+            success:function (data) {
+            	showgoodsList(data);
+            	console.log(data);
+            },
+            dataType:"json"
+        });
+        
+        var addcartExists = true;
+	    $("#addcart").click(function () {
+	    	let $num=parseInt($("#cart_num").html); 
+            $.ajax({
+                url:"php/addShoppingCart.php",
+                method:"get",
+	            data:{"vipName":12345678900,"goodsId":getCookie('goodsId'),"goodsCount":1},
+                success:function (data) {
+                	console.log(data);
+                    if(data=="0"){
+                        addcartExists= false;
+                        $(".buygoods_have").css({display:"none"});
+                        
+                        $(".buygoods_no").show();
+                    }else{
+                        addcartExists = true;
+                        var index = $('#addcart').index($(this));
+                        var count = parseInt($('.in_4').eq(index).html())+1;
+    					$('.in_4').eq(index).html(count);
+    					var counts= parseInt($('.heshop_num').eq(index).html())+1;
+    					$('.heshop_num').eq(index).html(counts);
+    					var num=$(".heshop_num").text();
+						saveCookie('numshop',num,7);
+                        $(".buygoods_have").show();
+                        $(".buygoods_no").hide();
+                    }
+                }
+           });
+        });
+			
+	});
+	function showgoodsList(datas){
+        let $ulbox = $("#ulbox");
+		let str=`
+			<li class="list_edit">
+				<a href="#">
+					<img src="${datas.goodsImg}" alt="" />
+				</a>
+			</li>
+			<li class="list_edit">
+				<a href="#">
+					<img src=${datas.goodsImg} alt="" />
+				</a>
+			</li>
+			<li class="list_edit">
+				<a href="#">
+					<img src=${datas.goodsImg} alt="" />
+				</a>
+			</li>
+			<li class="list_edit">
+				<a href="#">
+					<img src=${datas.goodsImg} alt="" />
+				</a>
+			</li>
+			<li class="list_edit">
+				<a href="#">
+					<img src=${datas.goodsImg} alt="" />
+				</a>
+			</li>
+			<li class="list_edit">
+				<a href="#">
+					<img src=${datas.goodsImg} alt="" />
+				</a>
+			</li>
+			<li class="list_edit">
+				<a href="#">
+					<img src=${datas.goodsImg} alt="" />
+				</a>
+			</li>
+		`;
+        $ulbox.append(str);
+        
+        $('#imgs').attr("src",datas.goodsImg);
+        $('#imges').attr("src",datas.goodsImg);
+        
+        let $titId = $("#titId");
+        	let strs=`
+	        	<hi class="pro_tit">
+					<a class="pro_tit_a " href="#" title="了解品牌" target="_blank">${datas.goodsType} </a>
+				</hi>
+				<div  class="tit2">
+					<span class="tit2wo">${datas.goodsName}</span>
+					<span class="tit2lo"></span>
+				</div>
+				<div class="tit_price">
+					￥<em>${datas.goodsPrice}</em>
+				</div>
+				<div class="pro_color">
+					<span class="col_wo">颜色</span>
+					<span class="col"></span>
+				</div>
+				`;
+        $titId.append(strs);
+   }
+</script>

@@ -29,17 +29,52 @@
 				
 				<div class="top-right">
 					<div class="btn">
-						<a href="#">登录</a>
-						<a href="#">注册</a>
+						<a href="login.html">登录</a>
+						<a href="register.html">注册</a>
+					</div>
+					<div class="logined">
+						欢迎您:<span class="logined_span"></span>
 					</div>
 					<div class="shopping">
-						<a href="#">
+						<a href="shopping.html">
 							<span class="phoneicon3"></span>
-							<span>购物袋（0）</span>
+							<span>购物袋(<span class="heshop_num">0</span>)</span>
 						</a>
-						<p class="buyCar">
-							您的购物袋是空的
-						</p>
+						<div class="buyCar">
+							<div class="buygoods_no">您的购物袋是空的</div>
+							<div class="buygoods_have">
+								<p class="have_tit">我的商品</p>
+								<div class="have_con clear">
+									<div class="con_l float_l ">
+										<a href="#">
+											<img src="img/goodsbigimg.jpg" alt="" />
+										</a>
+									</div>
+									<div class="con_m">
+										<span class="span_1">Brookstone </span>
+										<span class="span_2">熊猫耳机 真无线耳机</span>
+										<span class="span_3">￥458.00&nbsp;&nbsp;</span>
+										<span class="span_4">
+											╳
+											<span  class="in_4" id="cart_num">0</span>
+										</span>
+										
+										<div class="clear">
+											<div class="span_5 tit2lo">
+											</div>
+										</div>
+									</div>
+									<div class="con_r">╳</div>
+								</div>
+								<div class="have_bot clear">
+									<div class="btom_l float_l">
+										商品合计：￥
+										<span class="span_6">458.00</span>
+									</div>
+									<a class="btom_r float_r" href="shopping.html">去结算</a> 
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -60,10 +95,10 @@
 		<div class="bottom">
 			 <ul class="bottom_top">
                 <li class="bottom_lis">
-                	<a href="#" title="首页" class="lis_a">首页</a>
+                	<a href="index.html" title="首页" class="lis_a">首页</a>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="就近单品" class="lis_a">就近单品</a>
+                	<a href="goodslist.html" title="就近单品" class="lis_a">就近单品</a>
                 	<div class="disblock">
 		        		<ul>
 		        			<li><a class="block_li_a" href="#">男仕 Man</a></li>
@@ -82,10 +117,10 @@
             		</div>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="全球购" class="lis_a">全球购</a>
+                	<a href="goodslist.html" title="全球购" class="lis_a">全球购</a>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="女士" class="lis_a">女士</a>
+                	<a href="goodslist.html" title="女士" class="lis_a">女士</a>
                 	<div class="disblock">
 		        		<ul>
 		        			<li><a class="block_li_a" href="#">包袋 Bags</a></li>
@@ -118,7 +153,7 @@
             		</div>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="男仕" class="lis_a">男仕</a>
+                	<a href="goodslist.html" title="男仕" class="lis_a">男仕</a>
                 	<div class="disblock">
 		        		<ul>
 		        			<li><a class="block_li_a" href="#">包袋 Bags</a></li>
@@ -151,7 +186,7 @@
             		</div>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="家居生活" class="lis_a">家居生活</a>
+                	<a href="goodslist.html" title="家居生活" class="lis_a">家居生活</a>
                 	<div class="disblock">
 		        		<ul>
 		        			<li><a class="block_li_a" href="#">男仕 Man</a></li>
@@ -170,7 +205,7 @@
             		</div>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="腕表" class="lis_a">腕表</a>
+                	<a href="goodslist.html" title="腕表" class="lis_a">腕表</a>
                 	<div class="disblock">
 		        		<ul>
 		        			<li><a class="block_li_a" href="#">男士腕表</a></li>
@@ -189,7 +224,7 @@
             		</div>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="品牌" class="lis_a">品牌</a>
+                	<a href="goodslist.html" title="品牌" class="lis_a">品牌</a>
                 	<div class="disblock">
 		        		<ul>
 		        			<li><a class="block_li_a" href="#">男仕 Man</a></li>
@@ -208,7 +243,7 @@
             		</div>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="Mzine" class="lis_a">Mzine</a>
+                	<a href="goodslist.html" title="Mzine" class="lis_a">Mzine</a>
                 </li>
         	</ul>
        		<div class="clear"></div>
@@ -242,18 +277,18 @@
 							<p>颜色：白色</p>
 						</div>
 					</li>
-					<li>￥458.00</li>
+					<li class="unit-price">￥<span class="singlePrice"> 458.00</span> </li>
 					<li>
 						<div>
-							<a href="#" class="minus">-</a>
-							<input type="text" value="1"/>
-							<a href="#" class="add">+</a>
+							<a href="javascript:;" class="minus">-</a>
+							<input type="text"class="add_num" value="1"/>
+							<a href="javascript:;" class="adds">+</a>  
 						</div>
 					</li>
-					<li>￥458.00</li>
+					<li class="subtotal">￥<span class="everyPrice"> 458.00</span></li>
 					<li>
 						<p><a href="#">加入收藏</a></p>
-						<p><a href="#">删除</a></p>
+						<p><a class="shop-delete" href="javascript:;">删除</a></p>
 					</li>
 				</ul>
 				<ul class="lists">
@@ -269,48 +304,23 @@
 							<p>颜色：白色</p>
 						</div>
 					</li>
-					<li>￥458.00</li>
+					<li class="unit-price">￥<span class="singlePrice"> 458.00</span></li>
 					<li>
 						<div>
-							<a href="#" class="minus">-</a>
-							<input type="text" value="1"/>
-							<a href="#" class="add">+</a>
+							<a href="javascript:;" class="minus">-</a>
+							<input type="text"class="add_num" value="1"/>
+							<a href="javascript:;" class="adds">+</a>
 						</div>
 					</li>
-					<li>￥458.00</li>
+					<li class="subtotal">￥<span class="everyPrice"> 458.00</span></li>
 					<li>
 						<p><a href="#">加入收藏</a></p>
-						<p><a href="#">删除</a></p>
+						<p><a class="shop-delete" href="javascript:;">删除</a></p>
 					</li>
 				</ul>
-				<ul class="lists">
-					<li>
-						<input type="checkbox" class="chec"/>
-						<img src="img/shopp.jpg" alt="" />
-					</li>
-					<li>
-						<a href="#" title="Brookstone  熊猫耳机 真无线耳机">
-							Brookstone<br/> 熊猫耳机 真无线耳机
-						</a>
-						<div>
-							<p>颜色：白色</p>
-						</div>
-					</li>
-					<li>￥458.00</li>
-					<li>
-						<div>
-							<a href="#" class="minus">-</a>
-							<input type="text" value="1"/>
-							<a href="#" class="add">+</a>
-						</div>
-					</li>
-					<li>￥458.00</li>
-					<li>
-						<p><a href="#">加入收藏</a></p>
-						<p><a href="#">删除</a></p>
-					</li>
-				</ul>
-
+				
+				
+				
 			</div>
 			<div class="shopamount">
 				<div class="amounttop">
@@ -324,7 +334,10 @@
 							已选商品<span class="choosenum">0</span>件
 						</span>
                  		合计（不含运费、税费）：
-						<span class="chooseprice"></span>
+						<span class="chooseprice">
+							￥<span class="total_num">0.00</span>
+						</span>
+						
 						<p>
                         	活动折扣：
                         	<span>
@@ -336,7 +349,7 @@
 				</div>
 				<div class="amountbtm">
 					<a href="#" class="continue" target="_blank">继续购物</a>
-					<button class="settle">立即结算</button>
+					<a href="payment.html" class="settle_out"><button class="settle">立即结算</button></a>
 				</div>
 			</div> 
 			<div class="cart_like">
@@ -588,4 +601,6 @@
 </body>
 </html>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/cookieTools.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/shopping.js"></script>

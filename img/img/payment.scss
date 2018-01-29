@@ -1,0 +1,419 @@
+@charset "utf-8"; 
+@import "common";
+@import "header2"; 
+@import "footer";
+
+body{
+    width:1263px;
+    font: 12px "微软雅黑",Helvetica,sans-serif;
+    line-height: 1.5;
+    background-color:#f5f5f5;
+    color:#555;
+    margin:0 auto;
+}
+
+.orderNav{
+    background: #f4f4f4;
+    border-bottom: solid 1px #e4e4e4;
+    border-top: solid 1px #e4e4e4;
+    margin-top:30px;
+    .orderNav_m{
+        width: 1200px;
+        height: 57px;
+        margin: 0 auto;
+        background: url(../img/ordernav.gif) 0 -57px no-repeat;
+    }
+}
+.content{
+    width: 1200px;
+    margin: 0 auto 30px;
+    .order_main{
+        margin-top: 30px;
+        border: solid 1px #e8e8e8;
+        .order_box{
+            margin: 0 30px;
+            border-top:none;
+            border-top: solid 1px #e8e8e8;
+            table{
+                border-collapse: collapse;
+                border-spacing: 0;
+                font-size:14px;
+                color:#555;
+                th{
+                    background: #f5f5f5;
+                    height: 40px;
+                    line-height: 40px;
+                    font-weight: 100;
+                    &:first-child{
+                        width:138px;
+                    }
+                    &:nth-child(n+2){
+                        width:250px;
+                    }
+                }
+                td{
+                    padding: 15px 0;
+                    border-bottom: 1px solid #eee;
+                    text-align: center;
+                    &:first-child{
+                        width:138px;
+                    }
+                    &:nth-child(n+2){
+                        width:250px;
+                    }
+                }
+                .order_proList_name{
+                    text-align:left;
+                    a{
+                        color: #666;
+                    }
+                    span{
+                        color: #999;
+                        margin-right: 5px;
+                    }
+                    .cp_global{
+                        display: inline-block;
+                        width: 50px;
+                        height: 24px;
+                        background: url(../img/saleTip1.png) -1px -4px no-repeat;
+                    }
+                }
+                img{
+                    display: inline;
+                    width:100px;
+                }
+            }
+        }
+        .one{
+            border-top: none;
+            margin-bottom:40px;
+        }
+        .order_box_tit{
+            padding: 18px 0 25px 0;
+            font-size: 14px;
+            overflow: hidden;
+            .order_address{
+                float: left;
+                color:#333;
+            }
+            .order_add_address{
+                float: right;
+                margin-left: 20px;
+                color: #669aca;
+            }
+        }
+        .order_pay{
+            padding-bottom: 20px;
+            .order_pay_box{
+                padding-left: 20px;
+            }
+            .order_pay_box_m{
+                font-size: 12px;
+                width:100%;
+                .clearfix{
+                    overflow: hidden;
+                    li{
+                        cursor: pointer;
+                        float: left;
+                        height: 33px;
+                        line-height: 33px;
+                        padding: 0 25px;
+                        border: solid 1px #ddd;
+                        margin-right: 30px;
+                        position: relative;
+                    }
+                    .thistab{
+                        border: solid 1px #333;
+                        span{
+                            display: block;
+                            width: 18px;
+                            height: 18px;
+                            background: url(../img/orderico.png) 0 0 no-repeat;
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                        }
+                    }   
+                }
+                .order_pay_style{
+                    color: #999;
+                    line-height:25px;
+                }
+                .two{
+                    margin-top:20px;
+                }
+                .style_three{
+                    height:25px;
+                }
+                .pay_box_img{
+                    margin-top: 15px;
+                }
+                .clearfix_list{
+                    overflow: hidden;
+                    margin:20px 0 0;
+                    li{
+                        float: left;
+                        width: 248px;
+                        border: solid 1px #e8e8e8;
+                        margin: 0 6px 6px 0;
+                        box-shadow: 3px 3px 5px #eee;
+                        position: relative;
+                        background: url(../img/hongtiao.png) top center no-repeat;
+                        padding-top: 20px;
+                        .clearfix_list_box{
+                            height: 45px;
+                            .clearfix_box_left{
+                                color: #333;
+                                width: 90px;
+                                margin-left: 10px;
+                                float: left;
+                                span{
+                                    font-size: 28px;
+                                    vertical-align: text-top;
+                                    line-height: 1;
+                                    margin: 0;
+                                }
+                            }
+                            .clearfix_box_right{
+                                width: 145px;
+                                line-height: 20px;;
+                                float: right;
+                                .clearfix_box_text{
+                                    color: #999;
+                                }
+                            }
+                        }
+                        .clearfix_box_title{
+                            padding: 5px 0;
+                            margin: 0 25px;
+                            border-top: dashed 1px #e8e8e8;
+                            line-height: 20px;
+                            .clearfix_box_time{
+                                color: #999;
+                            }
+                        }
+                        .hi{
+                            display: block;
+                            width: 18px;
+                            height: 18px;
+                            background: url(../img/orderico.png) 0 0 no-repeat;
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                        }
+                    }
+                }
+                .order_coupons_s{
+                    margin-top:20px;
+                    padding-bottom: 5px;
+                    overflow: hidden;
+                    .order_coupons_int{
+                        width: 200px;
+                        height: 30px;
+                        line-height: 30px;
+                        padding-left: 3px;
+                        vertical-align: middle;
+                        border: solid 1px #ddd;
+                        border-right: none;
+                        float: left;
+                    }
+                    .order_coupons_btn{
+                        width: 56px;
+                        height: 30px;
+                        color: #333;
+                        background: #fff;
+                        border: solid 1px #ddd;
+                        vertical-align: middle;
+                        float: left;
+                    }
+                }
+            }
+        }
+        .pay_consultant{
+            padding: 30px 0;
+            border-top: 1px solid #ddd;
+            margin: 20px 30px 0;
+            overflow: hidden;
+            .pay_consultant_box{
+                span{
+                    float: left;
+                    padding-top: 4px;
+                    width: 70px;
+                    font-size:12px;
+                    color: #555;
+                }
+                .pay_note{
+                    float:left;
+                    width: 628px;
+                    height: 50px;
+                    border: 1px solid #ddd;
+                    padding: 5px;
+                    overflow: hidden;
+                    color: #555;    
+                }
+            }
+        }
+        .order_table{
+            padding: 15px 25px;
+            background: #fcfcfc;
+            margin-top: 20px;
+            .order_table_box{
+                width:100%;
+                .table_settlement_box{
+                    overflow: hidden;
+                    .table_settlement{
+                        float: right;
+                        th,td{
+                            line-height: 20px;
+                            padding: 5px 0;
+                            font-size: 14px;
+                        }
+                        th{
+                            color: #999;
+                            text-align: left;
+                            font-weight: 100;
+                            width:150px;
+                        }
+                        td{
+                            text-align: right;
+                            color:#333;
+                        }
+                        .table_rule{
+                            border-bottom: 1px solid #e8e8e8;
+                            margin: 5px 0;
+                        }
+                    }
+                } 
+                .order_btn{
+                    padding: 20px 29px 40px 0;
+                    width:100%;
+                    text-align: right;
+                    padding-right: 0;
+                    height: 45px;
+                    .order_pay_btn {
+                        width: 160px;
+                        height: 45px;
+                        background: #c43f40;
+                        color: #fff;
+                        border-radius: 3px;
+                        text-align: center;
+                        line-height: 45px;
+                        border: none;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }    
+    }
+}
+.add_address{
+    position: fixed;
+    border: solid 1px #eee;
+    background: #fff;
+    box-shadow: 0 0 3px #ccc;
+    color: #333;
+    z-index: 100;
+    display: none;
+    width: 640px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    .address_box_tit{
+        height: 60px;
+        line-height: 60px;
+        padding: 0 25px;
+        color: #999;
+        background: #f8f8f8;
+        font-size: 14px;
+        span{
+            float: left;
+        }
+        .close_btn{
+            float: right;
+            font-size: 20px;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+    .address_box_content{
+        padding: 40px;
+        input{
+            vertical-align: center;
+            height: 32px;
+            line-height: 32px;
+            font-size: 14px;
+            width: 135px;
+            padding-left:5px;
+            border: solid 1px #ddd;
+            color: #6c6c6c;
+        }
+        li{
+            line-height: 52px;
+            overflow: hidden;
+            &:nth-child(n+3){
+                input{
+                    width: 435px;
+                }
+            }
+            span{
+                color: #e8203b;
+                padding-right: 3px;
+            }
+            .consignee{
+                float: left;
+                p{
+                    float: left;
+                    margin-right:10px;
+                }
+                input{
+                    margin-top:10px;
+                    width: 135px;
+               }
+            }
+            .phone_num{
+                float: right;
+                margin-right:37px;
+                p{
+                    float: left;
+                    margin-right:10px;
+                }
+                input{
+                     margin-top:10px;
+                     width: 135px;
+                }
+            }
+            label{
+                margin-right:14px;
+            }
+            .ads{
+                margin-right:7px;
+            }
+            .address_add_province{
+                height: 32px;
+                line-height: 32px;
+                font-size: 14px;
+                border: solid 1px #ddd;
+                color: #6c6c6c;
+                width: 140px;
+                padding-left: 5px;
+            }
+            .shrAddress_editor_save{
+                display: block;
+                margin:10 auto;
+                width: 138px;
+                height: 38px;
+                line-height: 38px;
+                text-align: center;
+                border-radius: 3px;
+                background: #333;
+                border: solid 1px #333;
+                color: #fff;
+                font-size: 14px;
+            }
+        }
+    }
+}

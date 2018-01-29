@@ -29,17 +29,52 @@
 				
 				<div class="top-right">
 					<div class="btn">
-						<a href="#">登录</a>
-						<a href="#">注册</a>
+						<a href="login.html">登录</a>
+						<a href="register.html">注册</a>
+					</div>
+					<div class="logined">
+						欢迎您:<span class="logined_span"></span>
 					</div>
 					<div class="shopping">
-						<a href="#">
+						<a href="shopping.html">
 							<span class="phoneicon3"></span>
-							<span>购物袋（0）</span>
+							<span>购物袋(<span class="heshop_num">0</span>)</span>
 						</a>
-						<p class="buyCar">
-							您的购物袋是空的
-						</p>
+						<div class="buyCar">
+							<div class="buygoods_no">您的购物袋是空的</div>
+							<div class="buygoods_have">
+								<p class="have_tit">我的商品</p>
+								<div class="have_con clear">
+									<div class="con_l float_l ">
+										<a href="#">
+											<img src="img/goodsbigimg.jpg" alt="" />
+										</a>
+									</div>
+									<div class="con_m">
+										<span class="span_1">Brookstone </span>
+										<span class="span_2">熊猫耳机 真无线耳机</span>
+										<span class="span_3">￥458.00&nbsp;&nbsp;</span>
+										<span class="span_4">
+											╳
+											<span  class="in_4" id="cart_num">0</span>
+										</span>
+										
+										<div class="clear">
+											<div class="span_5 tit2lo">
+											</div>
+										</div>
+									</div>
+									<div class="con_r">╳</div>
+								</div>
+								<div class="have_bot clear">
+									<div class="btom_l float_l">
+										商品合计：￥
+										<span class="span_6">458.00</span>
+									</div>
+									<a class="btom_r float_r" href="shopping.html">去结算</a> 
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -60,10 +95,10 @@
 		<div class="bottom">
 			 <ul class="bottom_top">
                 <li class="bottom_lis">
-                	<a href="#" title="首页" class="lis_a">首页</a>
+                	<a href="index.html" title="首页" class="lis_a">首页</a>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="就近单品" class="lis_a">就近单品</a>
+                	<a href="goodslist.html" title="就近单品" class="lis_a">就近单品</a>
                 	<div class="disblock">
 		        		<ul>
 		        			<li><a class="block_li_a" href="#">男仕 Man</a></li>
@@ -82,10 +117,10 @@
             		</div>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="全球购" class="lis_a">全球购</a>
+                	<a href="goodslist.html" title="全球购" class="lis_a">全球购</a>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="女士" class="lis_a">女士</a>
+                	<a href="goodslist.html" title="女士" class="lis_a">女士</a>
                 	<div class="disblock">
 		        		<ul>
 		        			<li><a class="block_li_a" href="#">包袋 Bags</a></li>
@@ -118,7 +153,7 @@
             		</div>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="男仕" class="lis_a">男仕</a>
+                	<a href="goodslist.html" title="男仕" class="lis_a">男仕</a>
                 	<div class="disblock">
 		        		<ul>
 		        			<li><a class="block_li_a" href="#">包袋 Bags</a></li>
@@ -151,7 +186,7 @@
             		</div>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="家居生活" class="lis_a">家居生活</a>
+                	<a href="goodslist.html" title="家居生活" class="lis_a">家居生活</a>
                 	<div class="disblock">
 		        		<ul>
 		        			<li><a class="block_li_a" href="#">男仕 Man</a></li>
@@ -170,7 +205,7 @@
             		</div>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="腕表" class="lis_a">腕表</a>
+                	<a href="goodslist.html" title="腕表" class="lis_a">腕表</a>
                 	<div class="disblock">
 		        		<ul>
 		        			<li><a class="block_li_a" href="#">男士腕表</a></li>
@@ -189,7 +224,7 @@
             		</div>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="品牌" class="lis_a">品牌</a>
+                	<a href="goodslist.html" title="品牌" class="lis_a">品牌</a>
                 	<div class="disblock">
 		        		<ul>
 		        			<li><a class="block_li_a" href="#">男仕 Man</a></li>
@@ -208,7 +243,7 @@
             		</div>
                 </li>
                 <li class="bottom_lis">
-                	<a href="#" title="Mzine" class="lis_a">Mzine</a>
+                	<a href="goodslist.html" title="Mzine" class="lis_a">Mzine</a>
                 </li>
         	</ul>
        		<div class="clear"></div>
@@ -236,12 +271,6 @@
 						<span class="float_l">性别</span>
 						<span class="tit_lis float_r">+</span>
 					</div>
-					<!--<div class="listitem_mid">
-						<ul>
-							<li><a href="#" title="Man and Woman 男女">男女</a></li>
-							<li><a href="#" title="Man and Woman 男女">女士</a></li>
-						</ul>
-					</div>-->
 				</div>
 				<!--品牌-->
 				<div class="listitem">
@@ -291,248 +320,56 @@
 					
 				</div>
 				<div class="content_bottom">
-					<ul class="clearfix">
+					<!--<ul class="clearfix" id="ulbox"></ul>
 						<li>
 							<a href="goodsdetail.html" title="熊猫耳机 真无线耳机" class="goodslist_pic">
-								<img src="img/goodslist5.jpg" alt="" />
+								<img src="img/goodslist5.jpg"alt="" />
 							</a>
 							<a href="goodsdetail.html" title="熊猫耳机 真无线耳机" class="goodslist_tit">
 								<span>Lili M </span>
-								<span>熊猫耳机 真无线耳机</span>
+								<span goodsId=${datas[i].goodsId} class="goodsName">熊猫耳机</span>
 							</a>
 							<p class="goodslist_price">
-								<span class="pro_price_m">￥190.00</span>
+								<span class="pro_price_m">￥458</span>
 							</p>
 						</li>
 						<li>
-							<a href="#" title="熊猫耳机 真无线耳机" class="goodslist_pic">
-								<img src="img/goodslist5.jpg" alt="" />
+							<a href="goodsdetail.html" title="熊猫耳机 真无线耳机" class="goodslist_pic">
+								<img src="img/goodslist5.jpg"alt="" />
 							</a>
-							<a href="#" title="熊猫耳机 真无线耳机" class="goodslist_tit">
+							<a href="goodsdetail.html" title="熊猫耳机 真无线耳机" class="goodslist_tit">
 								<span>Lili M </span>
-								<span>熊猫耳机 真无线耳机</span>
+								<span goodsId=${datas[i].goodsId} class="goodsName">熊猫耳机</span>
 							</a>
 							<p class="goodslist_price">
-								<span class="pro_price_m">￥190.00</span>
+								<span class="pro_price_m">￥458</span>
 							</p>
 						</li>
 						<li>
-							<a href="#" title="熊猫耳机 真无线耳机" class="goodslist_pic">
-								<img src="img/goodslist5.jpg" alt="" />
+							<a href="goodsdetail.html" title="熊猫耳机 真无线耳机" class="goodslist_pic">
+								<img src="img/goodslist5.jpg"alt="" />
 							</a>
-							<a href="#" title="熊猫耳机 真无线耳机" class="goodslist_tit">
+							<a href="goodsdetail.html" title="熊猫耳机 真无线耳机" class="goodslist_tit">
 								<span>Lili M </span>
-								<span>熊猫耳机 真无线耳机</span>
+								<span goodsId=${datas[i].goodsId} class="goodsName">熊猫耳机</span>
 							</a>
 							<p class="goodslist_price">
-								<span class="pro_price_m">￥190.00</span>
+								<span class="pro_price_m">￥458</span>
 							</p>
 						</li>
 						<li>
-							<a href="#" title="熊猫耳机 真无线耳机" class="goodslist_pic">
-								<img src="img/goodslist5.jpg" alt="" />
+							<a href="goodsdetail.html" title="熊猫耳机 真无线耳机" class="goodslist_pic">
+								<img src="img/goodslist5.jpg"alt="" />
 							</a>
-							<a href="#" title="熊猫耳机 真无线耳机" class="goodslist_tit">
+							<a href="goodsdetail.html" title="熊猫耳机 真无线耳机" class="goodslist_tit">
 								<span>Lili M </span>
-								<span>熊猫耳机 真无线耳机</span>
+								<span goodsId=${datas[i].goodsId} class="goodsName">熊猫耳机</span>
 							</a>
 							<p class="goodslist_price">
-								<span class="pro_price_m">￥190.00</span>
+								<span class="pro_price_m">￥458</span>
 							</p>
 						</li>
-						<li>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_pic">
-								<img src="img/goodslist1.jpg" alt="" />
-							</a>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_tit">
-								<span>Lili M </span>
-								<span>2017FW | Lili M x CLOTHO 粉色贝母戒指</span>
-							</a>
-							<p class="goodslist_price">
-								<span class="pro_price_m">￥190.00</span>
-							</p>
-						</li>
-						<li>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_pic">
-								<img src="img/goodslist1.jpg" alt="" />
-							</a>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_tit">
-								<span>Lili M </span>
-								<span>2017FW | Lili M x CLOTHO 粉色贝母戒指</span>
-							</a>
-							<p class="goodslist_price">
-								<span class="pro_price_m">￥190.00</span>
-							</p>
-						</li>
-						<li>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_pic">
-								<img src="img/goodslist1.jpg" alt="" />
-							</a>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_tit">
-								<span>Lili M </span>
-								<span>2017FW | Lili M x CLOTHO 粉色贝母戒指</span>
-							</a>
-							<p class="goodslist_price">
-								<span class="pro_price_m">￥190.00</span>
-							</p>
-						</li>
-						<li>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_pic">
-								<img src="img/goodslist1.jpg" alt="" />
-							</a>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_tit">
-								<span>Lili M </span>
-								<span>2017FW | Lili M x CLOTHO 粉色贝母戒指</span>
-							</a>
-							<p class="goodslist_price">
-								<span class="pro_price_m">￥190.00</span>
-							</p>
-						</li>
-						<li>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_pic">
-								<img src="img/goodslist2.jpg" alt="" />
-							</a>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_tit">
-								<span>Lili M </span>
-								<span>2017FW | Lili M x CLOTHO 粉色贝母戒指</span>
-							</a>
-							<p class="goodslist_price">
-								<span class="pro_price_m">￥190.00</span>
-							</p>
-						</li>
-						<li>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_pic">
-								<img src="img/goodslist2.jpg" alt="" />
-							</a>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_tit">
-								<span>Lili M </span>
-								<span>2017FW | Lili M x CLOTHO 粉色贝母戒指</span>
-							</a>
-							<p class="goodslist_price">
-								<span class="pro_price_m">￥190.00</span>
-							</p>
-						</li>
-						<li>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_pic">
-								<img src="img/goodslist2.jpg" alt="" />
-							</a>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_tit">
-								<span>Lili M </span>
-								<span>2017FW | Lili M x CLOTHO 粉色贝母戒指</span>
-							</a>
-							<p class="goodslist_price">
-								<span class="pro_price_m">￥190.00</span>
-							</p>
-						</li>
-						<li>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_pic">
-								<img src="img/goodslist2.jpg" alt="" />
-							</a>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_tit">
-								<span>Lili M </span>
-								<span>2017FW | Lili M x CLOTHO 粉色贝母戒指</span>
-							</a>
-							<p class="goodslist_price">
-								<span class="pro_price_m">￥190.00</span>
-							</p>
-						</li>
-						<li>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_pic">
-								<img src="img/goodslist3.jpg" alt="" />
-							</a>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_tit">
-								<span>Lili M </span>
-								<span>2017FW | Lili M x CLOTHO 粉色贝母戒指</span>
-							</a>
-							<p class="goodslist_price">
-								<span class="pro_price_m">￥190.00</span>
-							</p>
-						</li>
-						<li>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_pic">
-								<img src="img/goodslist3.jpg" alt="" />
-							</a>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_tit">
-								<span>Lili M </span>
-								<span>2017FW | Lili M x CLOTHO 粉色贝母戒指</span>
-							</a>
-							<p class="goodslist_price">
-								<span class="pro_price_m">￥190.00</span>
-							</p>
-						</li>
-						<li>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_pic">
-								<img src="img/goodslist3.jpg" alt="" />
-							</a>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_tit">
-								<span>Lili M </span>
-								<span>2017FW | Lili M x CLOTHO 粉色贝母戒指</span>
-							</a>
-							<p class="goodslist_price">
-								<span class="pro_price_m">￥190.00</span>
-							</p>
-						</li>
-						<li>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_pic">
-								<img src="img/goodslist3.jpg" alt="" />
-							</a>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_tit">
-								<span>Lili M </span>
-								<span>2017FW | Lili M x CLOTHO 粉色贝母戒指</span>
-							</a>
-							<p class="goodslist_price">
-								<span class="pro_price_m">￥190.00</span>
-							</p>
-						</li>
-						<li>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_pic">
-								<img src="img/goodslist4.jpg" alt="" />
-							</a>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_tit">
-								<span>Lili M </span>
-								<span>2017FW | Lili M x CLOTHO 粉色贝母戒指</span>
-							</a>
-							<p class="goodslist_price">
-								<span class="pro_price_m">￥190.00</span>
-							</p>
-						</li>
-						<li>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_pic">
-								<img src="img/goodslist4.jpg" alt="" />
-							</a>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_tit">
-								<span>Lili M </span>
-								<span>2017FW | Lili M x CLOTHO 粉色贝母戒指</span>
-							</a>
-							<p class="goodslist_price">
-								<span class="pro_price_m">￥190.00</span>
-							</p>
-						</li>
-						<li>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_pic">
-								<img src="img/goodslist4.jpg" alt="" />
-							</a>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_tit">
-								<span>Lili M </span>
-								<span>2017FW | Lili M x CLOTHO 粉色贝母戒指</span>
-							</a>
-							<p class="goodslist_price">
-								<span class="pro_price_m">￥190.00</span>
-							</p>
-						</li>
-						<li>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_pic">
-								<img src="img/goodslist4.jpg" alt="" />
-							</a>
-							<a href="#" title="2017FW | Lili2017FW |粉色贝母戒指" class="goodslist_tit">
-								<span>Lili M </span>
-								<span>2017FW | Lili M x CLOTHO 粉色贝母戒指</span>
-							</a>
-							<p class="goodslist_price">
-								<span class="pro_price_m">￥190.00</span>
-							</p>
-						</li>
-					</ul>
+					</ul>-->
 				</div>
 				<!--下一页-->
 				<div class="content_next clearfix"></div>
@@ -540,8 +377,6 @@
 		</div>
 	</div>
 </section>
-
-
 
 <!--footer-->
 <footer>
@@ -644,5 +479,51 @@
 	</div>
 </footer>
 
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/cookieTools.js"></script>
+<script type="text/javascript" src="js/common.js"></script> 
+<script type="text/javascript" src="js/goodslist.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$.ajax({
+            url:"php/getGoodsList.php",
+            type:"get",
+            success:function (data) {
+
+            	showgoodsList(data);
+				$('#ulbox li').click(function(){
+					var goodsIds=$(this).find('.goodsName').attr('goodsId');
+					console.log(goodsIds);
+					saveCookie('goodsId',goodsIds,7);
+				});
+
+            },
+            dataType:"json"
+        });
+	});
+	function showgoodsList(datas) {
+		
+        let $ulbox = $("#ulbox");
+//      console.log(datas);
+//      console.log($ulbox);
+//      console.log('datas.length'+datas.length);
+        for(let i=0;i<datas.length;i++){
+            let str=`<li>
+				<a href="goodsdetail.html" title="熊猫耳机 真无线耳机" class="goodslist_pic">
+					<img src=${datas[i].goodsImg} alt="" />
+				</a>
+				<a href="goodsdetail.html" title="熊猫耳机 真无线耳机" class="goodslist_tit">
+					<span>${datas[i].goodsDesc}</span>
+					<span goodsId=${datas[i].goodsId} class="goodsName">${datas[i].goodsName}</span>
+				</a>
+				<p class="goodslist_price">
+					<span class="pro_price_m">￥${datas[i].goodsPrice}</span>
+				</p>
+				</li>`;
+            $ulbox.append(str);
+        }
+    }
+
+</script>
 </body>
 </html>

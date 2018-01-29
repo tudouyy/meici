@@ -1,3 +1,5 @@
+//首页index.js
+
 //顶部轮播图
 var arr=["../img/index_slideshow_1.jpg","../img/index_slideshow_1.jpg","../img/index_slideshow_1.jpg","../img/index_slideshow_1.jpg","../img/index_slideshow_1.jpg"];
 var ord=0;//的代表对当前 图片的序号，从0开始
